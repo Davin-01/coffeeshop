@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Cups</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            
+                
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact-container">
+        <div class="contact-box">
+            <h2>Contact Us</h2>
+            <p>We’d love to hear from you! Send us a message, and we’ll get back to you soon.</p>
+            <form id="contact-form" onsubmit="handleSubmit(event)">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" placeholder="Write your message here" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+
+            <p id="success-message" class="message success">Your message was sent successfully!</p>
+            <p id="error-message" class="message error">Oops, something went wrong. Please try again.</p>
+
+            <div class="social-media">
+                <a href="https://www.facebook.com/yourshop" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/yourshop" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/yourshop" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <script src="contact.js"></script>
+</body>
+</html>

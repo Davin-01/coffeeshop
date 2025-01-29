@@ -1,0 +1,114 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('assets/pic1.jpg'); /* Replace with actual image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+/* Navbar styling */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(44, 62, 80, 0.9);
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #E64833;
+}
+
+/* Centered Registration Form */
+/* Updated Registration Box */
+/* Centered Registration Form */
+#register-container {
+    background-color: rgba(44, 62, 80, 0.85); /* Transparent dark background */
+    padding: 15px; /* Reduced padding */
+    border-radius: 10px;
+    text-align: center;
+    max-width: 350px; /* Reduced width */
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    margin: 60px auto; /* Centers the form */
+}
+
+/* Form Fields */
+#register-form input {
+    width: 90%; /* Makes inputs fit nicely */
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Register Button */
+#register-form button {
+    width: 95%;
+    padding: 10px;
+    background-color: #E64833; /* Coffee-colored button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#register-form button:hover {
+    background-color: #c0392b;
+}
+
+/* Social Media Sign-up */
+.social-signup {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-signup button {
+    background-color: #4267B2; /* Facebook Blue */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.social-signup button.google {
+    background-color: #376bdbc4; /* Google Red */
+}

@@ -1,0 +1,144 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('assets/pic1.jpg'); /* Replace with your coffee image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+    padding-top: 80px; /* Prevent content from being hidden under fixed navbar */
+}
+
+/* Header and Navbar styles */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(44, 62, 80, 0.9); /* Dark coffee color with slight transparency */
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Logo styling */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.logo strong {
+    color: #E64833; /* Coffee-themed accent */
+}
+
+/* Navigation List */
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #E64833;
+}
+
+/* Button Styles */
+nav ul li button {
+    background-color: #E64833;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav ul li button a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li button:hover {
+    background-color: #C7402E;
+}
+
+/* Main Content Section */
+.hero {
+    max-width: 600px;
+    padding: 50px;
+    text-align: left;
+    margin-left: 10%;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+}
+
+.hero p {
+    font-size: 25px;
+    margin: 10px 0;
+    color: #f1f1f1;
+    font-weight: bold;
+
+}
+
+/* Login Button */
+.hero .login-btn {
+    display: inline-block;
+    background-color: #E64833;
+    color: white;
+    padding: 12px 25px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.hero .login-btn:hover {
+    background-color: #C7402E;
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgba(44, 62, 80, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

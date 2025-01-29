@@ -1,0 +1,155 @@
+/* General Reset */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('assets/pic1.jpg') no-repeat center center/cover; /* Background image */
+    color: #3E2723;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navigation Bar */
+header {
+    background-color: rgba(62, 39, 35, 0.9); /* Semi-transparent navbar */
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #D7CCC8;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #FFD54F;
+}
+
+/* Contact Section */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    margin-top: 70px; /* Ensures a gap from navbar */
+}
+
+.contact-box {
+    background: rgba(255, 255, 255, 0.1); /* Transparent effect */
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    backdrop-filter: blur(10px); /* Blurry effect for transparency */
+}
+
+/* Form Styling */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    margin: 10px 0 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #A1887F;
+    border-radius: 5px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.2); /* Transparent input */
+    outline: none;
+    transition: 0.3s;
+    color: #FFF;
+}
+
+input::placeholder, textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+input:focus, textarea:focus {
+    border-color: #FFD54F;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+button {
+    background-color: #795548;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #5D4037;
+}
+
+/* Feedback Messages */
+.message {
+    display: none;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}
+
+/* Social Media Icons */
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    font-size: 22px;
+    color: #FFD54F;
+    transition: 0.3s;
+}
+
+.social-media a:hover {
+    color: #FFF;
+}
