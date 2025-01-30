@@ -34,16 +34,17 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
 }
 
 nav ul li {
-    margin: 0 20px;
+    margin: 0 10px; /* Reduce margin for smaller screens */
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px; /* Smaller font size for mobile */
     transition: color 0.3s ease;
 }
 
@@ -55,17 +56,17 @@ nav ul li a:hover {
 #login-form {
     margin-top: 10px;
     background-color: rgba(44, 62, 80, 0.8); /* Dark transparent background */
-    padding: 30px;
+    padding: 20px; /* Reduce padding for smaller screens */
     border-radius: 10px;
     text-align: center;
     max-width: 400px;
-    width: 100%;
+    width: 90%; /* Make form width responsive */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(5px);
 }
 
 h2 {
-    font-size: 28px;
+    font-size: 24px; /* Smaller font size for mobile */
     margin-bottom: 15px;
 }
 
@@ -73,13 +74,13 @@ label {
     display: block;
     text-align: left;
     margin: 10px 0 5px;
-    font-size: 16px;
+    font-size: 14px; /* Smaller font size for mobile */
 }
 
 input {
     width: 100%;
     padding: 10px;
-    font-size: 16px;
+    font-size: 14px; /* Smaller font size for mobile */
     border: none;
     border-radius: 5px;
     outline: none;
@@ -92,7 +93,7 @@ button {
     color: white;
     border: none;
     padding: 12px;
-    font-size: 18px;
+    font-size: 16px; /* Smaller font size for mobile */
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s ease;
@@ -104,7 +105,7 @@ button:hover {
 
 p {
     margin-top: 15px;
-    font-size: 14px;
+    font-size: 14px; /* Smaller font size for mobile */
 }
 
 p a {
@@ -115,4 +116,72 @@ p a {
 
 p a:hover {
     text-decoration: underline;
+}
+
+/* ==================== */
+/* Mobile Responsiveness */
+/* ==================== */
+
+@media (max-width: 768px) {
+    /* Adjust navbar for smaller screens */
+    nav ul {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Reduce margin for stacked items */
+    }
+
+    /* Adjust login form for smaller screens */
+    #login-form {
+        padding: 15px; /* Reduce padding further */
+    }
+
+    h2 {
+        font-size: 22px; /* Smaller font size for smaller screens */
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    input {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further adjustments for very small screens */
+    #login-form {
+        padding: 10px; /* Minimal padding */
+    }
+
+    h2 {
+        font-size: 20px; /* Smaller font size for very small screens */
+    }
+
+    label {
+        font-size: 12px;
+    }
+
+    input {
+        font-size: 12px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 12px;
+    }
 }
